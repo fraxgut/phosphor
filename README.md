@@ -131,18 +131,18 @@ and contrast figures is at [`dist/json/phosphor.json`](dist/json/phosphor.json).
 ## The palette
 
 <!-- palette:start -->
-| slot | hex | okL | contrast on base00 |
-| --- | --- | --- | --- |
-| base00 | <img src="assets/swatch/000000.svg" width="14" height="14" alt=""> `#000000` | 0.000 | — |
-| base01 | <img src="assets/swatch/0C0C0B.svg" width="14" height="14" alt=""> `#0C0C0B` | 0.154 | 1.07:1 |
-| base02 | <img src="assets/swatch/242321.svg" width="14" height="14" alt=""> `#242321` | 0.256 | 1.34:1 |
-| base03 | <img src="assets/swatch/43423E.svg" width="14" height="14" alt=""> `#43423E` | 0.379 | 2.09:1 |
-| base04 | <img src="assets/swatch/6A6862.svg" width="14" height="14" alt=""> `#6A6862` | 0.517 | 3.77:1 |
-| base05 | <img src="assets/swatch/96948B.svg" width="14" height="14" alt=""> `#96948B` | 0.666 | 6.91:1 |
-| base06 | <img src="assets/swatch/C8C4B8.svg" width="14" height="14" alt=""> `#C8C4B8` | 0.820 | 12.04:1 |
-| base07 | <img src="assets/swatch/FFFAEB.svg" width="14" height="14" alt=""> `#FFFAEB` | 0.985 | 20.13:1 |
+| slot | hex | role | okL | okC | okH | on base00 | on base01 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| base00 | <img src="assets/swatch/000000.svg" width="14" height="14" alt=""> `#000000` | background | 0.000 | 0.000 | — | — | 1.07:1 |
+| base01 | <img src="assets/swatch/0C0C0B.svg" width="14" height="14" alt=""> `#0C0C0B` | status bars | 0.154 | 0.002 | 106.6° | 1.07:1 | — |
+| base02 | <img src="assets/swatch/242321.svg" width="14" height="14" alt=""> `#242321` | selection | 0.256 | 0.004 | 84.6° | 1.34:1 | 1.25:1 |
+| base03 | <img src="assets/swatch/43423E.svg" width="14" height="14" alt=""> `#43423E` | comments | 0.379 | 0.007 | 95.2° | 2.09:1 | 1.95:1 |
+| base04 | <img src="assets/swatch/6A6862.svg" width="14" height="14" alt=""> `#6A6862` | dark foreground | 0.517 | 0.010 | 91.6° | 3.77:1 | 3.51:1 |
+| base05 | <img src="assets/swatch/96948B.svg" width="14" height="14" alt=""> `#96948B` | foreground | 0.666 | 0.013 | 96.5° | 6.91:1 | 6.44:1 |
+| base06 | <img src="assets/swatch/C8C4B8.svg" width="14" height="14" alt=""> `#C8C4B8` | light foreground | 0.820 | 0.017 | 91.6° | 12.04:1 | 11.22:1 |
+| base07 | <img src="assets/swatch/FFFAEB.svg" width="14" height="14" alt=""> `#FFFAEB` | lightest | 0.985 | 0.020 | 91.6° | 20.13:1 | 18.76:1 |
 
-| family | dim | normal | bright | okL | okC | okH | contrast on base01 |
+| family | dim | normal | bright | okL | okC | okH | on base01 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | red | <img src="assets/swatch/A80215.svg" width="14" height="14" alt=""> `#A80215` | <img src="assets/swatch/DF212A.svg" width="14" height="14" alt=""> `#DF212A` | <img src="assets/swatch/FF4C49.svg" width="14" height="14" alt=""> `#FF4C49` | 0.580 | 0.220 | 26.0° | 4.09:1 |
 | orange | <img src="assets/swatch/9A3D01.svg" width="14" height="14" alt=""> `#9A3D01` | <img src="assets/swatch/D05502.svg" width="14" height="14" alt=""> `#D05502` | <img src="assets/swatch/F07232.svg" width="14" height="14" alt=""> `#F07232` | 0.601 | 0.172 | 44.6° | 4.64:1 |

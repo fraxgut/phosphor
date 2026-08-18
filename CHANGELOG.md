@@ -32,11 +32,10 @@ text.
 
 Seventeen: the full palette, eight Tint variants and eight Mono variants.
 
-A Tint rotates every hue part of the way towards one target. Its strength is
-derived from two rules rather than chosen — each slot stays a relative of the
-colour it replaced, and the families stay at least three quarters as far apart
-as the full palette holds them — so each variant reaches its own figure,
-between 0.261 and 0.639.
+A Tint rotates every hue part of the way towards one target. Two rules set how
+far it goes: each slot stays a relative of the colour it replaced, and the
+families stay at least three quarters as far apart as the full palette holds
+them. Each variant therefore reaches its own strength, between 0.261 and 0.639.
 
 A Mono holds one hue across every chromatic slot within a drift of ±10°, and
 separates the families by lightness and chroma. Mono Green takes the hue of
