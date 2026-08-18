@@ -254,18 +254,31 @@ def write_swatches(colours):
 
 # The table headings, in each language the documentation carries.
 WORDS = {
-    "en": {"slot": "slot", "hex": "hex", "contrast": "contrast on base00",
+    "en": {"slot": "slot", "hex": "hex", "contrast": "on base00",
            "family": "family", "dim": "dim", "normal": "normal",
-           "bright": "bright", "acontrast": "contrast on base01",
+           "bright": "bright", "acontrast": "on base01", "role": "role",
            "variant": "variant", "strength": "strength", "scheme": "scheme"},
-    "es": {"slot": "ranura", "hex": "hex", "contrast": "contraste sobre base00",
+    "es": {"slot": "ranura", "hex": "hex", "contrast": "sobre base00",
            "family": "familia", "dim": "tenue", "normal": "normal",
-           "bright": "vivo", "acontrast": "contraste sobre base01",
+           "bright": "vivo", "acontrast": "sobre base01", "role": "función",
            "variant": "variante", "strength": "intensidad", "scheme": "esquema"},
-    "la": {"slot": "sedes", "hex": "hex", "contrast": "discrimen ad base00",
+    "la": {"slot": "sedes", "hex": "hex", "contrast": "ad base00",
            "family": "familia", "dim": "obscurus", "normal": "medius",
-           "bright": "clarus", "acontrast": "discrimen ad base01",
+           "bright": "clarus", "acontrast": "ad base01", "role": "munus",
            "variant": "varietas", "strength": "vis", "scheme": "schema"},
+}
+
+# What each rung of the neutral ramp does in an editor and a terminal.
+# The roles come from the Base16 and Base24 slot definitions.
+ROLES = {
+    "en": ["background", "status bars", "selection", "comments",
+           "dark foreground", "foreground", "light foreground", "lightest"],
+    "es": ["fondo", "barras de estado", "selección", "comentarios",
+           "primer plano oscuro", "primer plano", "primer plano claro",
+           "el más claro"],
+    "la": ["fundus", "tabulae status", "electio", "commentarii",
+           "prospectus obscurus", "prospectus", "prospectus clarus",
+           "clarissimus"],
 }
 
 
@@ -280,12 +293,18 @@ def palette_tables(variant, lang, depth):
     """The neutral ramp and the chromatic families as Markdown tables."""
     w = WORDS[lang]
     neutral, fam = variant["neutral"], variant["families"]
-    out = [f'| {w["slot"]} | {w["hex"]} | okL | {w["contrast"]} |',
-           "| --- | --- | --- | --- |"]
+    out = [f'| {w["slot"]} | {w["hex"]} | {w["role"]} | okL | okC | okH '
+           f'| {w["contrast"]} | {w["acontrast"]} |',
+           "| --- | --- | --- | --- | --- | --- | --- | --- |"]
     for i, h in enumerate(neutral):
-        L = hex_to_oklch(h)[0]
-        c = "—" if i == 0 else f"{contrast(h, neutral[0]):.2f}:1"
-        out.append(f'| base0{i} | {sw(h, depth)} | {L:.3f} | {c} |')
+        L, C, H = hex_to_oklch(h)
+        c0 = "—" if i == 0 else f"{contrast(h, neutral[0]):.2f}:1"
+        c1 = "—" if i == 1 else f"{contrast(h, neutral[1]):.2f}:1"
+        # A pure grey has no hue to report; the ramp here is warm, and the
+        # angle is what shows it.
+        hue = f"{H:.1f}°" if C > 0.0005 else "—"
+        out.append(f'| base0{i} | {sw(h, depth)} | {ROLES[lang][i]} | {L:.3f} '
+                   f'| {C:.3f} | {hue} | {c0} | {c1} |')
     out += ["", f'| {w["family"]} | {w["dim"]} | {w["normal"]} | {w["bright"]} '
                 f'| okL | okC | okH | {w["acontrast"]} |',
             "| --- | --- | --- | --- | --- | --- | --- | --- |"]
