@@ -1,0 +1,198 @@
+# src/phosphor.yaml
+# @fraxgut
+# CC-BY-SA-4.0
+# The canonical Phosphor palette and the rules that derive every variant.
+#
+# This is the only file in the repository that a person edits. The
+# schemes and the exports come from `uv run scripts/generate.py`, which
+# reads this file and writes everything else.
+
+meta:
+  name: Phosphor
+  slug: phosphor
+  author: "@fraxgut"
+  licence: CC-BY-SA-4.0
+  version: 2.0.0
+  variant: dark
+  description: >-
+    A terminal palette built on a warm neutral ramp and eight saturated
+    chromatic families, with a green lean.
+
+# --- NEUTRAL RAMP ---
+# Carried unchanged from version 1. Measured in OKLab the ramp climbs
+# from pure black to a warm ivory in steps that hold close to even, and
+# the warm cast is what separates Phosphor from a grey-based scheme.
+# The first step is long and the second short because base00 is true
+# black, which is a deliberate deep background rather than a defect.
+neutral:
+  - "#000000"   # base00  okL 0.000  background
+  - "#0C0C0B"   # base01  okL 0.154  lighter background, status bars
+  - "#242321"   # base02  okL 0.256  selection background
+  - "#43423E"   # base03  okL 0.379  comments, invisibles
+  - "#6A6862"   # base04  okL 0.517  dark foreground
+  - "#96948B"   # base05  okL 0.666  default foreground
+  - "#C8C4B8"   # base06  okL 0.820  light foreground
+  - "#FFFAEB"   # base07  okL 0.985  lightest foreground
+
+# --- CHROMATIC FAMILIES ---
+# Eight families, each with three tones. The dim and bright tones are
+# designed in OKLab lightness, at -0.12 and +0.09 from the normal tone,
+# and never by an arithmetic operation on the RGB channels.
+#
+# The hue of yellow, green and cyan is fixed by the author and carries
+# the identity of the scheme. The cyan measures at OKLCH 153 degrees,
+# which is a spring green rather than a cyan; the name is inherited and
+# the colour is deliberate. The remaining five hues were placed by a
+# constrained search that maximises the smallest distance between any
+# two accents, with each hue held inside the band its name occupies.
+families:
+  red:
+    dim: "#A80215"
+    normal: "#DF212A"     # okL 0.580  okC 0.220  okH  26.0
+    bright: "#FF4C49"
+  orange:
+    dim: "#9A3D01"
+    normal: "#D05502"     # okL 0.601  okC 0.174  okH  44.5
+    bright: "#F07232"
+  yellow:
+    dim: "#9B6902"
+    normal: "#C98A04"     # okL 0.679  okC 0.142  okH  76.5   anchor
+    bright: "#E7A739"
+  green:
+    dim: "#669603"
+    normal: "#83BE05"     # okL 0.733  okC 0.192  okH 128.7   anchor
+    bright: "#9DDB3C"
+  cyan:
+    dim: "#039750"
+    normal: "#06C268"     # okL 0.714  okC 0.183  okH 153.1   anchor
+    bright: "#44E084"
+  blue:
+    dim: "#0263A4"
+    normal: "#1687D9"     # okL 0.607  okC 0.155  okH 247.5
+    bright: "#3EA4F8"
+  violet:
+    dim: "#6E02CD"
+    normal: "#9041F9"     # okL 0.580  okC 0.253  okH 297.1
+    bright: "#A573FF"
+  magenta:
+    dim: "#A20265"
+    normal: "#D5268A"     # okL 0.587  okC 0.222  okH 352.0
+    bright: "#F64AA6"
+
+# --- DERIVATION ---
+# The Tint and Mono variants are generated from the families above. The
+# parameters here are the whole of the design; changing one of them
+# changes every generated variant.
+derivation:
+
+  # The tones, as offsets in OKLab lightness from the normal tone. The
+  # floor keeps a dim tone clear of the background, and the ceiling keeps
+  # a bright tone from reaching the light neutrals.
+  tones:
+    dim: -0.12
+    bright: 0.09
+    floor: 0.38
+    ceiling: 0.82
+
+  # The three hues that never move in the canonical palette.
+  anchors: [yellow, green, cyan]
+
+  # Kinship arcs. A Tint rotates a slot towards its target hue, and the
+  # slot may change identity on the way: the red slot accepts a brown, an
+  # orange or a purple, because each is a relative of what was there. It
+  # does not accept a yellow or a green, which have nothing to do with
+  # red. Green accepts yellow-green, cyan and blue, and refuses orange
+  # and red for the same reason.
+  #
+  # Each arc runs anticlockwise from the first angle to the second.
+  kinship:
+    red: [280.0, 70.0]
+    orange: [300.0, 100.0]
+    yellow: [40.0, 155.0]
+    green: [85.0, 230.0]
+    cyan: [110.0, 260.0]
+    blue: [180.0, 320.0]
+    violet: [230.0, 20.0]
+    magenta: [275.0, 60.0]
+
+  # A colour may leave its arc once it is dark and muted enough to read
+  # as a neutral of its own family — a brown, an olive, a slate — rather
+  # than as the pure hue of the region it entered.
+  muted:
+    lightness: 0.62
+    chroma: 0.17
+
+  # No accent may fall below this contrast on base01. WCAG sets 3:1 for
+  # large text and for interface components, which is what a syntax
+  # colour is. The generator treats it as a constraint and lifts the
+  # lightness of any colour that misses it, rather than reporting the
+  # miss afterwards.
+  contrast_floor: 3.0
+
+  tint:
+    # The strength of each Tint is derived, never chosen. It is the
+    # largest rotation that keeps all eight slots related to their origin
+    # and keeps the families apart. The floor is a fraction of the
+    # separation the full palette achieves, so it moves with the palette
+    # instead of being a constant somebody picked.
+    separation_floor_ratio: 0.75
+    # Lightness bounds for the pass that redistributes separation after
+    # rotation, and the band where a bright slot would read as a yellow.
+    brown_band: [55.0, 145.0]
+    brown_ceiling: 0.62
+    lightness_search: [-0.10, 0.06]
+
+  mono:
+    # A Mono variant holds one hue across every chromatic slot, within a
+    # small drift budget, and separates the families by lightness and
+    # chroma alone. The offsets are relative to the hue's own lightness,
+    # because each hue carries a different usable range: a red at OKLab
+    # lightness 0.82 is pink, while a green at the same lightness is
+    # still green.
+    hue_drift: 10.0
+    lightness_scale: 0.78
+    lightness_floor: 0.62
+    # family: [lightness offset, chroma fraction, hue drift]
+    address:
+      red: [0.103, 1.00, 10.0]
+      orange: [0.023, 0.95, 6.0]
+      yellow: [0.143, 0.72, 4.0]
+      green: [0.058, 0.85, 0.0]
+      cyan: [-0.037, 0.70, -4.0]
+      blue: [-0.097, 0.95, -6.0]
+      violet: [-0.177, 1.00, -10.0]
+      magenta: [-0.017, 1.00, 8.0]
+    # Mono Green reproduces the hue of the version 1 anchor, which is the
+    # colour most closely associated with the project.
+    green_anchor: "#47D813"
+
+# --- SLOT MAPPING ---
+# Phosphor is the canonical palette; Base16 and Base24 are compatibility
+# representations. The mapping is written down because it is lossy in
+# both directions, and because the specifications assign meanings to
+# their slots that Phosphor does not share.
+#
+# Base16 has no slot for a second warm accent, so base0F takes magenta
+# where the specification expects a dark red or brown, and base0E takes
+# violet where it expects magenta.
+mapping:
+  base16:
+    base08: red.normal
+    base09: orange.normal
+    base0A: yellow.normal
+    base0B: green.normal
+    base0C: cyan.normal
+    base0D: blue.normal
+    base0E: violet.normal
+    base0F: magenta.normal
+  # Base24 defines eighteen slots and holds the bright ANSI colours, so
+  # the tonal model maps onto it without loss.
+  base24:
+    base10: neutral.0
+    base11: neutral.0
+    base12: red.bright
+    base13: yellow.bright
+    base14: green.bright
+    base15: cyan.bright
+    base16: blue.bright
+    base17: violet.bright
