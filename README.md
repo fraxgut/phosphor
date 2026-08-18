@@ -211,6 +211,11 @@ uv run scripts/validate.py    # check the source and everything generated
 
 [`src/phosphor.yaml`](src/phosphor.yaml) is the only file a person edits.
 
+## Contribute
+
+[CONTRIBUTING.md](CONTRIBUTING.md) holds the constraints a colour proposal works
+inside, the commit conventions and the translation rules.
+
 ## Licence
 
 [CC-BY-SA-4.0 or later](LICENCE.md), by [@fraxgut](https://github.com/fraxgut).

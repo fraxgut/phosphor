@@ -224,13 +224,13 @@ all 34 scheme files.
 
 ## Contribute
 
-Open an issue before you propose a colour, and include the measurements: the
+Open an issue before you propose a colour, and bring the measurements: the
 OKLCH figures, the contrast on base01, and the distance to the neighbouring
 accents. The measurements rank the options and show where one of them fails.
 The eye picks the winner.
 
-Edit `src/phosphor.yaml` and run the generator. A pull request that edits a
-generated file gets the equivalent edit to the source instead.
+[CONTRIBUTING.md](../../CONTRIBUTING.md) holds the constraints a proposal works
+inside, the commit conventions and the translation rules.
 
 ## Licence
 

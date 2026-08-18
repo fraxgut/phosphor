@@ -243,8 +243,9 @@ Abra un issue antes de proponer un color e incluya las medidas: las cifras
 OKLCH, el contraste sobre base01 y la distancia a los acentos vecinos. Las
 medidas ordenan las opciones y muestran dónde falla una. El ojo elige.
 
-Edite `src/phosphor.yaml` y ejecute el generador. Un pull request que modifique
-un archivo generado recibe en su lugar la edición equivalente en la fuente.
+[CONTRIBUTING.md](../../CONTRIBUTING.md) reúne las restricciones dentro de las
+que trabaja una propuesta, las convenciones de commits y las reglas de
+traducción.
 
 ## Licencia
 

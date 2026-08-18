@@ -9,6 +9,21 @@ Release history for the Phosphor palette
 
 This project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.0.2
+
+### Contributing
+
+`CONTRIBUTING.md` states the two conditions a change meets before it merges:
+the validator passes, and a second run of the generator leaves the working tree
+clean. It also names the four constraints a colour proposal works inside, the
+commit types and scopes, the language rules, and the five steps that add a
+translation.
+
+### Licence
+
+`LICENCE.md` carries the terms, the asset attributions and the canonical legal
+text in one file, so the repository root holds a single licence document.
+
 ## 2.0.1
 
 Every colour value matches 2.0.0. This release carries the documentation, the

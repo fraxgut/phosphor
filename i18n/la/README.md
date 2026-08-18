@@ -228,11 +228,11 @@ cognationis cuiusque Tint, fundamentum discriminis, et sedes impletas in omnibus
 ## Conferre
 
 Quaestionem aperi antequam colorem proponas, et mensuras adde: numeros OKLCH,
-discrimen ad base01, et distantiam ad accentus vicinos. Mutatio quae numerum
-meliorem facit et tabulam peiorem videri non est emendatio.
+discrimen ad base01, et distantiam ad accentus vicinos. Mensurae optiones
+ordinant et ostendunt ubi una cadat. Oculus victorem eligit.
 
-`src/phosphor.yaml` muta et instrumentum generandi curre. Petitio quae plicam
-generatam mutat mutationem aequivalentem in fonte accipit.
+[CONTRIBUTING.md](../../CONTRIBUTING.md) fines intra quos propositum laborat,
+consuetudines commissionum et regulas translationis continet.
 
 ## Licentia
 
