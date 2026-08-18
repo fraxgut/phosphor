@@ -184,3 +184,33 @@ def hue_name(H: float) -> str:
         if H < limit:
             return name
     return "pink-red"
+
+
+# --- SELF-CHECK ---
+# Run this file directly to verify the conversions against known anchors.
+# The chain sRGB → OKLab → OKLCH → sRGB has enough steps that a transposed
+# matrix coefficient stays invisible until a colour comes out wrong.
+if __name__ == "__main__":
+    # White sits at OKLab lightness 1, black at 0, mid grey near 0.5989.
+    assert abs(rgb_to_oklab(hex_to_rgb("#FFFFFF"))[0] - 1.0) < 1e-6
+    assert abs(rgb_to_oklab(hex_to_rgb("#000000"))[0]) < 1e-9
+    assert abs(rgb_to_oklab(hex_to_rgb("#808080"))[0] - 0.5989) < 1e-3
+
+    # A round trip through OKLCH returns the colour it started from.
+    for h in ("#DF212A", "#83BE05", "#9041F9", "#0C0C0B", "#FFFAEB"):
+        assert oklch_to_hex(hex_to_oklch(h)) == h, h
+
+    # WCAG anchors: black on white is 21:1, and #777777 on white is 4.478:1.
+    assert abs(contrast("#FFFFFF", "#000000") - 21.0) < 1e-6
+    assert abs(contrast("#777777", "#FFFFFF") - 4.478) < 1e-3
+
+    # The gamut mapper keeps lightness and hue, and gives up chroma. The
+    # request below asks for more chroma than sRGB holds at that hue.
+    L, C, H = hex_to_oklch(oklch_to_hex((0.60, 0.40, 297.0)))
+    assert abs(L - 0.60) < 1e-2 and abs(H - 297.0) < 1.0 and C < 0.40
+
+    # Hue names read from the angle, not from the slot the colour fills.
+    assert hue_name(hex_to_oklch("#06C268")[2]) == "green"
+    assert hue_name(hex_to_oklch("#DF212A")[2]) == "red"
+
+    print("phosphor_colour: all checks passed")
