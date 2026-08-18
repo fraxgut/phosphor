@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+assets/phosphorus.svg
+@fraxgut
+CC-BY-SA-4.0
+The alchemical sign of phosphorus, the mark of this palette
+
+The sign is a historical form. This drawing of it is original work, and
+it carries #47D813, the green the palette is built around.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100"
+     height="100" role="img"
+     aria-label="The alchemical sign of phosphorus.">
+  <title>Phosphorus</title>
+  <g fill="none" stroke="#47d813" stroke-width="7"
+     stroke-linecap="square">
+    <path d="M50 8 L86 56 L14 56 Z"/>
+    <path d="M50 56 L50 94"/>
+    <path d="M22 68 L78 68"/>
+    <path d="M22 80 L78 80"/>
+  </g>
+</svg>

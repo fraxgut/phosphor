@@ -1,13 +1,160 @@
+<!--
+README.md
+@fraxgut
+CC-BY-SA-4.0
+Project landing page, palette reference and language selector
+-->
+
+<div align="center">
+
+<img src="assets/phosphorus.svg" alt="The alchemical sign of phosphorus" width="80" height="80">
+
 # Phosphor
 
-A terminal colour palette built on a warm neutral ramp and eight saturated
-chromatic families, with a green lean. It ships as Base16 and Base24 schemes,
-in seventeen variants.
+**A terminal colour palette with a warm neutral ramp and a green lean**
 
-![The Phosphor palette](assets/palette.svg)
+OKLCH · Base16 · Base24 · 17 variants · 32 colours
 
-Phosphor was named Frankifuscus through version 1. See
-[CHANGELOG.md](CHANGELOG.md) for what changed and why.
+<a href="LICENCE.md"><img src="https://img.shields.io/badge/licence-CC%20BY--SA%204.0%20or%20later-%2383BE05?style=for-the-badge" alt="Licence: CC BY-SA 4.0 or later"/></a>
+<img src="https://img.shields.io/badge/variants-17-informational?style=for-the-badge" alt="Variants: 17"/>
+<img src="https://img.shields.io/badge/systems-Base16%20%C2%B7%20Base24-informational?style=for-the-badge" alt="Systems: Base16 and Base24"/>
+<img src="https://img.shields.io/badge/languages-3-blue?style=for-the-badge" alt="Languages: 3"/>
+
+</div>
+
+---
+
+## 🌐 Select your language
+
+- <img src="assets/flags/spqr.svg" alt="" height="20"> **[Latina](i18n/la/README.md)**
+- <img src="assets/flags/burgundy.svg" alt="" height="20"> **[Español](i18n/es/README.md)**
+- <img src="assets/flags/england.svg" alt="" height="20"> **[English](i18n/en/README.md)**
+
+The documentation in each language covers the palette, the variants, the
+standards mapping and the build. This page carries the colours themselves.
+
+---
+
+<div align="center">
+
+<img src="assets/palette.svg" alt="The Phosphor palette" width="760">
+
+</div>
+
+## Copy the colours
+
+**Neutral ramp, base00 to base07**
+
+```
+#000000 #0C0C0B #242321 #43423E #6A6862 #96948B #C8C4B8 #FFFAEB
+```
+
+**Accents, normal tone, base08 to base0F**
+
+```
+#DF212A #D05502 #C98A04 #83BE05 #06C268 #1687D9 #9041F9 #D5268A
+```
+
+**Accents, bright tone, the bright ANSI half**
+
+```
+#FF4C49 #E7A739 #9DDB3C #44E084 #3EA4F8 #A573FF
+```
+
+<details>
+<summary><b>Base24 scheme</b></summary>
+
+```yaml
+system: "base24"
+name: "Phosphor"
+author: "@fraxgut"
+slug: "phosphor"
+variant: "dark"
+palette:
+  base00: "#000000"
+  base01: "#0C0C0B"
+  base02: "#242321"
+  base03: "#43423E"
+  base04: "#6A6862"
+  base05: "#96948B"
+  base06: "#C8C4B8"
+  base07: "#FFFAEB"
+  base08: "#DF212A"
+  base09: "#D05502"
+  base0A: "#C98A04"
+  base0B: "#83BE05"
+  base0C: "#06C268"
+  base0D: "#1687D9"
+  base0E: "#9041F9"
+  base0F: "#D5268A"
+  base10: "#000000"
+  base11: "#000000"
+  base12: "#FF4C49"
+  base13: "#E7A739"
+  base14: "#9DDB3C"
+  base15: "#44E084"
+  base16: "#3EA4F8"
+  base17: "#A573FF"
+```
+
+</details>
+
+<details>
+<summary><b>CSS custom properties</b></summary>
+
+```css
+:root {
+  --ph-base00: #000000;  --ph-base04: #6A6862;
+  --ph-base01: #0C0C0B;  --ph-base05: #96948B;
+  --ph-base02: #242321;  --ph-base06: #C8C4B8;
+  --ph-base03: #43423E;  --ph-base07: #FFFAEB;
+
+  --ph-red-dim:     #A80215;  --ph-red-normal:     #DF212A;  --ph-red-bright:     #FF4C49;
+  --ph-orange-dim:  #9A3D01;  --ph-orange-normal:  #D05502;  --ph-orange-bright:  #F07232;
+  --ph-yellow-dim:  #9B6902;  --ph-yellow-normal:  #C98A04;  --ph-yellow-bright:  #E7A739;
+  --ph-green-dim:   #669603;  --ph-green-normal:   #83BE05;  --ph-green-bright:   #9DDB3C;
+  --ph-cyan-dim:    #039750;  --ph-cyan-normal:    #06C268;  --ph-cyan-bright:    #44E084;
+  --ph-blue-dim:    #0263A4;  --ph-blue-normal:    #1687D9;  --ph-blue-bright:    #3EA4F8;
+  --ph-violet-dim:  #6E02CD;  --ph-violet-normal:  #9041F9;  --ph-violet-bright:  #A573FF;
+  --ph-magenta-dim: #A20265;  --ph-magenta-normal: #D5268A;  --ph-magenta-bright: #F64AA6;
+}
+```
+
+The full stylesheet, with every variant, is at
+[`dist/css/phosphor.css`](dist/css/phosphor.css). Every variant with its OKLCH
+and contrast figures is at [`dist/json/phosphor.json`](dist/json/phosphor.json).
+
+</details>
+
+---
+
+## The palette
+
+<!-- palette:start -->
+| slot | hex | okL | contrast on base00 |
+| --- | --- | --- | --- |
+| base00 | <img src="assets/swatch/000000.svg" width="14" height="14" alt=""> `#000000` | 0.000 | — |
+| base01 | <img src="assets/swatch/0C0C0B.svg" width="14" height="14" alt=""> `#0C0C0B` | 0.154 | 1.07:1 |
+| base02 | <img src="assets/swatch/242321.svg" width="14" height="14" alt=""> `#242321` | 0.256 | 1.34:1 |
+| base03 | <img src="assets/swatch/43423E.svg" width="14" height="14" alt=""> `#43423E` | 0.379 | 2.09:1 |
+| base04 | <img src="assets/swatch/6A6862.svg" width="14" height="14" alt=""> `#6A6862` | 0.517 | 3.77:1 |
+| base05 | <img src="assets/swatch/96948B.svg" width="14" height="14" alt=""> `#96948B` | 0.666 | 6.91:1 |
+| base06 | <img src="assets/swatch/C8C4B8.svg" width="14" height="14" alt=""> `#C8C4B8` | 0.820 | 12.04:1 |
+| base07 | <img src="assets/swatch/FFFAEB.svg" width="14" height="14" alt=""> `#FFFAEB` | 0.985 | 20.13:1 |
+
+| family | dim | normal | bright | okL | okC | okH | contrast on base01 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| red | <img src="assets/swatch/A80215.svg" width="14" height="14" alt=""> `#A80215` | <img src="assets/swatch/DF212A.svg" width="14" height="14" alt=""> `#DF212A` | <img src="assets/swatch/FF4C49.svg" width="14" height="14" alt=""> `#FF4C49` | 0.580 | 0.220 | 26.0° | 4.09:1 |
+| orange | <img src="assets/swatch/9A3D01.svg" width="14" height="14" alt=""> `#9A3D01` | <img src="assets/swatch/D05502.svg" width="14" height="14" alt=""> `#D05502` | <img src="assets/swatch/F07232.svg" width="14" height="14" alt=""> `#F07232` | 0.601 | 0.172 | 44.6° | 4.64:1 |
+| yellow | <img src="assets/swatch/9B6902.svg" width="14" height="14" alt=""> `#9B6902` | <img src="assets/swatch/C98A04.svg" width="14" height="14" alt=""> `#C98A04` | <img src="assets/swatch/E7A739.svg" width="14" height="14" alt=""> `#E7A739` | 0.679 | 0.142 | 76.3° | 6.64:1 |
+| green | <img src="assets/swatch/669603.svg" width="14" height="14" alt=""> `#669603` | <img src="assets/swatch/83BE05.svg" width="14" height="14" alt=""> `#83BE05` | <img src="assets/swatch/9DDB3C.svg" width="14" height="14" alt=""> `#9DDB3C` | 0.733 | 0.192 | 128.6° | 8.70:1 |
+| cyan | <img src="assets/swatch/039750.svg" width="14" height="14" alt=""> `#039750` | <img src="assets/swatch/06C268.svg" width="14" height="14" alt=""> `#06C268` | <img src="assets/swatch/44E084.svg" width="14" height="14" alt=""> `#44E084` | 0.714 | 0.183 | 152.9° | 8.32:1 |
+| blue | <img src="assets/swatch/0263A4.svg" width="14" height="14" alt=""> `#0263A4` | <img src="assets/swatch/1687D9.svg" width="14" height="14" alt=""> `#1687D9` | <img src="assets/swatch/3EA4F8.svg" width="14" height="14" alt=""> `#3EA4F8` | 0.607 | 0.155 | 247.5° | 5.13:1 |
+| violet | <img src="assets/swatch/6E02CD.svg" width="14" height="14" alt=""> `#6E02CD` | <img src="assets/swatch/9041F9.svg" width="14" height="14" alt=""> `#9041F9` | <img src="assets/swatch/A573FF.svg" width="14" height="14" alt=""> `#A573FF` | 0.580 | 0.253 | 297.3° | 4.02:1 |
+| magenta | <img src="assets/swatch/A20265.svg" width="14" height="14" alt=""> `#A20265` | <img src="assets/swatch/D5268A.svg" width="14" height="14" alt=""> `#D5268A` | <img src="assets/swatch/F64AA6.svg" width="14" height="14" alt=""> `#F64AA6` | 0.587 | 0.222 | 352.0° | 4.17:1 |
+<!-- palette:end -->
+
+---
 
 ## Variants
 
@@ -17,207 +164,53 @@ and separates the families by lightness alone.
 
 ![The seventeen Phosphor variants](assets/variants.svg)
 
-## Palette
+<!-- variants:start -->
+| variant | scheme | strength |
+| --- | --- | --- |
+| Phosphor | `phosphor` | — |
+| Phosphor Tint Red | `phosphor-tint-red` | 0.425 |
+| Phosphor Tint Orange | `phosphor-tint-orange` | 0.519 |
+| Phosphor Tint Yellow | `phosphor-tint-yellow` | 0.595 |
+| Phosphor Tint Green | `phosphor-tint-green` | 0.639 |
+| Phosphor Tint Cyan | `phosphor-tint-cyan` | 0.279 |
+| Phosphor Tint Blue | `phosphor-tint-blue` | 0.460 |
+| Phosphor Tint Violet | `phosphor-tint-violet` | 0.261 |
+| Phosphor Tint Magenta | `phosphor-tint-magenta` | 0.319 |
+| Phosphor Mono Red | `phosphor-mono-red` | — |
+| Phosphor Mono Orange | `phosphor-mono-orange` | — |
+| Phosphor Mono Yellow | `phosphor-mono-yellow` | — |
+| Phosphor Mono Green | `phosphor-mono-green` | — |
+| Phosphor Mono Cyan | `phosphor-mono-cyan` | — |
+| Phosphor Mono Blue | `phosphor-mono-blue` | — |
+| Phosphor Mono Violet | `phosphor-mono-violet` | — |
+| Phosphor Mono Magenta | `phosphor-mono-magenta` | — |
+<!-- variants:end -->
 
-### Neutral ramp
+Each variant ships as a Base16 and a Base24 scheme, in
+[`schemes/`](schemes/).
 
-The ramp runs from true black to a warm ivory. Its steps in OKLab lightness
-hold close to even, and the warm cast is what separates Phosphor from a
-grey-based scheme. The ramp is unchanged from version 1.
+---
 
-| slot | hex | okL | contrast on base00 |
-| --- | --- | --- | --- |
-| base00 | `#000000` | 0.000 | — |
-| base01 | `#0C0C0B` | 0.154 | 1.07:1 |
-| base02 | `#242321` | 0.256 | 1.34:1 |
-| base03 | `#43423E` | 0.379 | 2.09:1 |
-| base04 | `#6A6862` | 0.517 | 3.77:1 |
-| base05 | `#96948B` | 0.666 | 6.91:1 |
-| base06 | `#C8C4B8` | 0.820 | 12.04:1 |
-| base07 | `#FFFAEB` | 0.985 | 20.13:1 |
+## Install
 
-### Chromatic families
+Copy a scheme from [`schemes/base24/`](schemes/base24/) into the tool that reads
+Base24 schemes, or take the hex values from the blocks above.
 
-Eight families, each with a dim, a normal and a bright tone. The tones are
-designed in OKLab lightness, at −0.12 and +0.09 from the normal tone. The
-contrast column measures the normal tone against base01.
-
-| family | dim | normal | bright | okL | okC | okH | contrast |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| red | `#A80215` | `#DF212A` | `#FF4C49` | 0.580 | 0.220 | 26.0° | 4.09:1 |
-| orange | `#9A3D01` | `#D05502` | `#F07232` | 0.601 | 0.172 | 44.6° | 4.64:1 |
-| yellow | `#9B6902` | `#C98A04` | `#E7A739` | 0.679 | 0.142 | 76.3° | 6.64:1 |
-| green | `#669603` | `#83BE05` | `#9DDB3C` | 0.733 | 0.192 | 128.6° | 8.70:1 |
-| cyan | `#039750` | `#06C268` | `#44E084` | 0.714 | 0.183 | 152.9° | 8.32:1 |
-| blue | `#0263A4` | `#1687D9` | `#3EA4F8` | 0.607 | 0.155 | 247.5° | 5.13:1 |
-| violet | `#6E02CD` | `#9041F9` | `#A573FF` | 0.580 | 0.253 | 297.3° | 4.02:1 |
-| magenta | `#A20265` | `#D5268A` | `#F64AA6` | 0.587 | 0.222 | 352.0° | 4.17:1 |
-
-## Design notes
-
-### Three hues are fixed
-
-The yellow, the green and the cyan hold their version 1 hue angle exactly. They
-carry the identity of the scheme, and every generated variant works around
-them.
-
-The colour named cyan measures at OKLCH 153°, which is a spring green rather
-than a cyan. The name is inherited and the colour is deliberate. Two accents
-therefore sit within 24° of each other in the green band, and the wheel carries
-a 94° gap where a cyan would go. That density is the theme, not a defect.
-
-### The other five hues are placed by search
-
-The red, orange, blue, violet and magenta were positioned by a constrained
-search that maximises the smallest distance between any two accents, with each
-hue confined to the band its name occupies. The search moves them very little:
-the red holds its version 1 angle, the blue and violet do not rotate at all,
-and the largest rotation is the magenta at 13.5°.
-
-The smallest distance between two accents is **0.082 ΔE**, between green and
-cyan. Both are fixed, so no arrangement of the free hues can raise it. That
-figure is the price of the anchors and it is stated rather than hidden.
-
-### Lightness is corrected, hue is preserved
-
-Version 1 was built by holding HSL saturation and lightness constant and
-turning the hue dial: every accent measured S = 83.8 %, L = 46.1 %. HSL
-lightness is not perceptually uniform, so those identical figures produced
-accents that ranged from 2.65:1 to 11.30:1 in real contrast, and a green
-brighter than the base06 foreground.
-
-Version 2 compresses the OKLab lightness spread from 0.32 to 0.20 and keeps the
-order version 1 established. The violet rises from OKLab lightness 0.485 to
-0.580, which takes it from 2.65:1 to 4.02:1 while holding its full chroma.
-
-### Contrast
-
-Accents are syntax colours rather than body text, so the floor is the 3:1 that
-WCAG sets for large text and for interface components. The generator treats it
-as a constraint and raises the lightness of any colour that misses it. Five of
-the eight accents also clear 4.5:1 and are usable as body text.
-
-## Tint
-
-A Tint rotates every hue part of the way towards one target, so the scheme
-leans without surrendering its variety.
-
-A rotated slot may change identity. The red slot accepts a brown, an orange or
-a purple, because each is a relative of the colour that was there. It does not
-accept a yellow or a green, which have nothing to do with red. The green slot
-accepts yellow-green, cyan and blue, and refuses orange and red for the same
-reason. `src/phosphor.yaml` records the arc each family may occupy, and
-`scripts/validate.py` checks every variant against it.
-
-The strength of a Tint is derived, never chosen. It is the largest rotation
-that keeps all eight slots related to their origin and keeps the families at
-least three quarters as far apart as the full palette holds them. Each variant
-therefore has its own strength, and the constraint that stops it differs.
-
-| variant | slug | strength | stopped by |
-| --- | --- | --- | --- |
-| Phosphor Tint Green | `phosphor-tint-green` | 0.639 | separation floor |
-| Phosphor Tint Yellow | `phosphor-tint-yellow` | 0.595 | violet loses kinship |
-| Phosphor Tint Orange | `phosphor-tint-orange` | 0.519 | green loses kinship |
-| Phosphor Tint Blue | `phosphor-tint-blue` | 0.460 | yellow loses kinship |
-| Phosphor Tint Red | `phosphor-tint-red` | 0.425 | green loses kinship |
-| Phosphor Tint Magenta | `phosphor-tint-magenta` | 0.319 | green loses kinship |
-| Phosphor Tint Cyan | `phosphor-tint-cyan` | 0.279 | separation floor |
-| Phosphor Tint Violet | `phosphor-tint-violet` | 0.261 | yellow loses kinship |
-
-Rotation alone pushes together the pairs that were already close, so a second
-pass redistributes the lightness of the slots that moved. Without it, red and
-orange arrive 0.036 ΔE apart in Tint Green as two near-identical browns.
-
-## Mono
-
-A Mono variant holds one hue across every chromatic slot, within a drift budget
-of ±10°, and separates the semantic families by OKLab lightness and chroma
-alone. Mono Green reproduces the hue of `#47D813`, the colour most closely
-associated with the project.
-
-Eight roles inside one hue sit closer together than eight roles spread around
-the wheel: the closest pair in a Mono variant measures about 0.031 ΔE against
-0.082 in the full palette. A Mono buys coherence and pays in
-distinguishability. That is inherent to monochromy rather than a fault in the
-construction, and `scripts/validate.py` reports it as a warning.
-
-## Standards
-
-Phosphor's canonical palette is `src/phosphor.yaml`. Base16 and Base24 are
-compatibility representations generated from it.
-
-- **Base24** carries eighteen slots, base00 to base17, including the bright
-  ANSI colours. The dim, normal and bright model maps onto it without loss.
-- **Base16** carries sixteen. Two slots take a colour the specification names
-  differently: base0E holds violet where the specification expects magenta, and
-  base0F holds magenta where it expects a dark red or brown. The mapping is
-  written down in `src/phosphor.yaml` under `mapping`.
-
-## Formats
-
-| path | contents |
-| --- | --- |
-| `src/phosphor.yaml` | the canonical palette and every derivation rule |
-| `schemes/base16/` | 17 Base16 schemes |
-| `schemes/base24/` | 17 Base24 schemes |
-| `dist/json/phosphor.json` | every variant with OKLCH and contrast figures |
-| `dist/css/phosphor.css` | custom properties, one block per variant |
-| `assets/` | the SVG previews in this file |
-
-Application themes come from the [tinted-theming][tt] builder rather than from
-this repository. Point it at a scheme file here and it produces the theme for
-Alacritty, Kitty, WezTerm, Neovim, tmux and the rest, from templates that their
-maintainers keep current.
+Application themes come from the [tinted-theming][tt] builder. Point it at a
+scheme file here and it produces the theme for Alacritty, Kitty, WezTerm,
+Neovim, tmux and the rest, from templates their maintainers keep current.
 
 [tt]: https://github.com/tinted-theming/home
 
-## Usage
-
-Copy a scheme from `schemes/base24/` into the tool that consumes Base24
-schemes, or take the hex values straight from `dist/json/phosphor.json`.
-
-For a web page, link the stylesheet and set the variant on the root element:
-
-```html
-<link rel="stylesheet" href="dist/css/phosphor.css">
-<html data-phosphor="phosphor-tint-green">
-```
-
-The full palette is defined on bare `:root`, so a page that sets no attribute
-gets Phosphor itself.
-
-## Building
-
-The generator and the validator need [uv][uv]. Both scripts declare their own
-dependencies, so no environment setup is required.
+## Build
 
 ```sh
-uv run scripts/generate.py    # rewrite schemes/, dist/ and assets/
+uv run scripts/generate.py    # rewrite schemes/, dist/, assets/ and the tables
 uv run scripts/validate.py    # check the source and everything generated
 ```
 
-`src/phosphor.yaml` is the only file a person edits. Everything under
-`schemes/`, `dist/` and `assets/` is generated, and running the generator twice
-without editing the source leaves the working tree clean.
-
-The validator checks hex syntax, duplicate colours, sRGB gamut, the monotonic
-neutral ramp, the anchor hues, the accent separation of every variant, the
-kinship rule for every Tint, the contrast floor, and slot coverage in all 34
-scheme files.
-
-[uv]: https://docs.astral.sh/uv/
-
-## Contributing
-
-Open an issue before a colour change, and include the measurement that
-motivates it: the OKLCH figures, the contrast, and the separation from the
-neighbouring accents. A change that improves a number while making the palette
-look worse is not an improvement.
-
-Pull requests that edit a generated file are closed in favour of the equivalent
-edit to `src/phosphor.yaml`.
+[`src/phosphor.yaml`](src/phosphor.yaml) is the only file a person edits.
 
 ## Licence
 
-[CC-BY-SA-4.0](LICENCE), by [@fraxgut](https://github.com/fraxgut).
+[CC-BY-SA-4.0 or later](LICENCE.md), by [@fraxgut](https://github.com/fraxgut).
