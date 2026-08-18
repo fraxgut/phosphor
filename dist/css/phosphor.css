@@ -1,0 +1,613 @@
+/* Generated from src/phosphor.yaml. Do not edit manually. */
+
+/* Phosphor */
+:root {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #A80215;
+  --ph-red-normal: #DF212A;
+  --ph-red-bright: #FF4C49;
+  --ph-orange-dim: #9A3D01;
+  --ph-orange-normal: #D05502;
+  --ph-orange-bright: #F07232;
+  --ph-yellow-dim: #9B6902;
+  --ph-yellow-normal: #C98A04;
+  --ph-yellow-bright: #E7A739;
+  --ph-green-dim: #669603;
+  --ph-green-normal: #83BE05;
+  --ph-green-bright: #9DDB3C;
+  --ph-cyan-dim: #039750;
+  --ph-cyan-normal: #06C268;
+  --ph-cyan-bright: #44E084;
+  --ph-blue-dim: #0263A4;
+  --ph-blue-normal: #1687D9;
+  --ph-blue-bright: #3EA4F8;
+  --ph-violet-dim: #6E02CD;
+  --ph-violet-normal: #9041F9;
+  --ph-violet-bright: #A573FF;
+  --ph-magenta-dim: #A20265;
+  --ph-magenta-normal: #D5268A;
+  --ph-magenta-bright: #F64AA6;
+}
+
+/* Phosphor Tint Red */
+:root[data-phosphor="phosphor-tint-red"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #A70215;
+  --ph-red-normal: #DF212A;
+  --ph-red-bright: #FF4B48;
+  --ph-orange-dim: #781F01;
+  --ph-orange-normal: #AE3101;
+  --ph-orange-bright: #CD4F2A;
+  --ph-yellow-dim: #8A4501;
+  --ph-yellow-normal: #BB620E;
+  --ph-yellow-bright: #DA7D36;
+  --ph-green-dim: #A67D03;
+  --ph-green-normal: #D3A005;
+  --ph-green-bright: #F0BB3C;
+  --ph-cyan-dim: #706201;
+  --ph-cyan-normal: #988503;
+  --ph-cyan-bright: #B4A034;
+  --ph-blue-dim: #7642A3;
+  --ph-blue-normal: #9A66CA;
+  --ph-blue-bright: #B681E8;
+  --ph-violet-dim: #950283;
+  --ph-violet-normal: #CB0CB3;
+  --ph-violet-bright: #EB3ED1;
+  --ph-magenta-dim: #800136;
+  --ph-magenta-normal: #B90852;
+  --ph-magenta-bright: #D9376C;
+}
+
+/* Phosphor Tint Orange */
+:root[data-phosphor="phosphor-tint-orange"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #791D01;
+  --ph-red-normal: #B02E02;
+  --ph-red-bright: #CF4D2A;
+  --ph-orange-dim: #9A3D01;
+  --ph-orange-normal: #D05502;
+  --ph-orange-bright: #F07232;
+  --ph-yellow-dim: #AA5E02;
+  --ph-yellow-normal: #D6802C;
+  --ph-yellow-bright: #F59C4D;
+  --ph-green-dim: #A67D03;
+  --ph-green-normal: #D3A005;
+  --ph-green-bright: #F0BB3C;
+  --ph-cyan-dim: #726101;
+  --ph-cyan-normal: #9A8303;
+  --ph-cyan-bright: #B69F34;
+  --ph-blue-dim: #8D3789;
+  --ph-blue-normal: #B35CAF;
+  --ph-blue-bright: #D177CC;
+  --ph-violet-dim: #9E0261;
+  --ph-violet-normal: #D80386;
+  --ph-violet-bright: #F93CA2;
+  --ph-magenta-dim: #AA022C;
+  --ph-magenta-normal: #E21F43;
+  --ph-magenta-bright: #FF4F61;
+}
+
+/* Phosphor Tint Yellow */
+:root[data-phosphor="phosphor-tint-yellow"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #663301;
+  --ph-red-normal: #964D01;
+  --ph-red-bright: #B3682A;
+  --ph-orange-dim: #884E01;
+  --ph-orange-normal: #B86B02;
+  --ph-orange-bright: #D68732;
+  --ph-yellow-dim: #9B6902;
+  --ph-yellow-normal: #C98A04;
+  --ph-yellow-bright: #E7A639;
+  --ph-green-dim: #998303;
+  --ph-green-normal: #C3A805;
+  --ph-green-bright: #DFC43C;
+  --ph-cyan-dim: #696501;
+  --ph-cyan-normal: #8E8903;
+  --ph-cyan-bright: #A9A534;
+  --ph-blue-dim: #027421;
+  --ph-blue-normal: #369A43;
+  --ph-blue-bright: #55B65F;
+  --ph-violet-dim: #A60229;
+  --ph-violet-normal: #E3043C;
+  --ph-violet-bright: #FF485A;
+  --ph-magenta-dim: #893101;
+  --ph-magenta-normal: #BE4702;
+  --ph-magenta-bright: #DE642E;
+}
+
+/* Phosphor Tint Green */
+:root[data-phosphor="phosphor-tint-green"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #514001;
+  --ph-red-normal: #786001;
+  --ph-red-bright: #937B2B;
+  --ph-orange-dim: #726201;
+  --ph-orange-normal: #99850F;
+  --ph-orange-bright: #B5A139;
+  --ph-yellow-dim: #7A7A02;
+  --ph-yellow-normal: #9E9F19;
+  --ph-yellow-bright: #BABB41;
+  --ph-green-dim: #669503;
+  --ph-green-normal: #83BE05;
+  --ph-green-bright: #9EDB3D;
+  --ph-cyan-dim: #307401;
+  --ph-cyan-normal: #459C0D;
+  --ph-cyan-bright: #62B938;
+  --ph-blue-dim: #01513F;
+  --ph-blue-normal: #02775E;
+  --ph-blue-bright: #329278;
+  --ph-violet-dim: #016661;
+  --ph-violet-normal: #038D87;
+  --ph-violet-bright: #38A9A2;
+  --ph-magenta-dim: #6F4D01;
+  --ph-magenta-normal: #986D13;
+  --ph-magenta-bright: #B58837;
+}
+
+/* Phosphor Tint Cyan */
+:root[data-phosphor="phosphor-tint-cyan"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #633501;
+  --ph-red-normal: #915101;
+  --ph-red-bright: #AE6C2A;
+  --ph-orange-dim: #7F5401;
+  --ph-orange-normal: #AC7402;
+  --ph-orange-bright: #C98F33;
+  --ph-yellow-dim: #877402;
+  --ph-yellow-normal: #B09804;
+  --ph-yellow-bright: #CCB439;
+  --ph-green-dim: #4E9A03;
+  --ph-green-normal: #6EC232;
+  --ph-green-bright: #89DF54;
+  --ph-cyan-dim: #039750;
+  --ph-cyan-normal: #06C268;
+  --ph-cyan-bright: #44E084;
+  --ph-blue-dim: #026A83;
+  --ph-blue-normal: #0391B1;
+  --ph-blue-bright: #39ADCE;
+  --ph-violet-dim: #0154AF;
+  --ph-violet-normal: #0275EF;
+  --ph-violet-bright: #4594FF;
+  --ph-magenta-dim: #9E2D01;
+  --ph-magenta-normal: #D74002;
+  --ph-magenta-bright: #F75F31;
+}
+
+/* Phosphor Tint Blue */
+:root[data-phosphor="phosphor-tint-blue"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #6F017D;
+  --ph-red-normal: #9C1FAE;
+  --ph-red-bright: #BA43CB;
+  --ph-orange-dim: #922C87;
+  --ph-orange-normal: #B952AD;
+  --ph-orange-bright: #D86ECA;
+  --ph-yellow-dim: #027743;
+  --ph-yellow-normal: #239E5F;
+  --ph-yellow-bright: #48BB79;
+  --ph-green-dim: #01584F;
+  --ph-green-normal: #027E72;
+  --ph-green-bright: #34998D;
+  --ph-cyan-dim: #039192;
+  --ph-cyan-normal: #06BABC;
+  --ph-cyan-bright: #43D7D9;
+  --ph-blue-dim: #0263A4;
+  --ph-blue-normal: #1687D9;
+  --ph-blue-bright: #3EA3F8;
+  --ph-violet-dim: #3D36D4;
+  --ph-violet-normal: #5860FE;
+  --ph-violet-bright: #7788FF;
+  --ph-magenta-dim: #8634CD;
+  --ph-magenta-normal: #AB5DF7;
+  --ph-magenta-bright: #C089FF;
+}
+
+/* Phosphor Tint Violet */
+:root[data-phosphor="phosphor-tint-violet"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #7F013C;
+  --ph-red-normal: #B8085A;
+  --ph-red-bright: #D83774;
+  --ph-orange-dim: #A91E3A;
+  --ph-orange-normal: #D3495B;
+  --ph-orange-bright: #F36775;
+  --ph-yellow-dim: #BC5630;
+  --ph-yellow-normal: #E57B55;
+  --ph-yellow-bright: #FF9B78;
+  --ph-green-dim: #015947;
+  --ph-green-normal: #027F67;
+  --ph-green-bright: #349B81;
+  --ph-cyan-dim: #03918C;
+  --ph-cyan-normal: #06BBB4;
+  --ph-cyan-bright: #44D8D1;
+  --ph-blue-dim: #265BB5;
+  --ph-blue-normal: #497FDE;
+  --ph-blue-bright: #639CFC;
+  --ph-violet-dim: #6E02CC;
+  --ph-violet-normal: #9041F9;
+  --ph-violet-bright: #A573FF;
+  --ph-magenta-dim: #9A0281;
+  --ph-magenta-normal: #C831A9;
+  --ph-magenta-bright: #E852C6;
+}
+
+/* Phosphor Tint Magenta */
+:root[data-phosphor="phosphor-tint-magenta"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0C0B;
+  --ph-base02: #242321;
+  --ph-base03: #43423E;
+  --ph-base04: #6A6862;
+  --ph-base05: #96948B;
+  --ph-base06: #C8C4B8;
+  --ph-base07: #FFFAEB;
+  --ph-red-dim: #820128;
+  --ph-red-normal: #BB093E;
+  --ph-red-bright: #DC3857;
+  --ph-orange-dim: #A8201C;
+  --ph-orange-normal: #D24B41;
+  --ph-orange-bright: #F2685B;
+  --ph-yellow-dim: #B45612;
+  --ph-yellow-normal: #DC7A40;
+  --ph-yellow-bright: #FC975D;
+  --ph-green-dim: #A67D03;
+  --ph-green-normal: #D3A005;
+  --ph-green-bright: #F0BB3C;
+  --ph-cyan-dim: #6E6301;
+  --ph-cyan-normal: #958603;
+  --ph-cyan-bright: #B0A234;
+  --ph-blue-dim: #534FB3;
+  --ph-blue-normal: #7473DC;
+  --ph-blue-bright: #8E8FFA;
+  --ph-violet-dim: #8402AB;
+  --ph-violet-normal: #AF2EDE;
+  --ph-violet-bright: #CC51FD;
+  --ph-magenta-dim: #A20265;
+  --ph-magenta-normal: #D5268A;
+  --ph-magenta-bright: #F64BA6;
+}
+
+/* Phosphor Mono Red */
+:root[data-phosphor="phosphor-mono-red"] {
+  --ph-base00: #000000;
+  --ph-base01: #0E0B0B;
+  --ph-base02: #2A201F;
+  --ph-base03: #503D3A;
+  --ph-base04: #7E5F5C;
+  --ph-base05: #B48782;
+  --ph-base06: #F0B3AC;
+  --ph-base07: #FFF8F7;
+  --ph-red-dim: #D33E0D;
+  --ph-red-normal: #FF683F;
+  --ph-red-bright: #FF9D83;
+  --ph-orange-dim: #BF2001;
+  --ph-orange-normal: #F73919;
+  --ph-orange-bright: #FF7960;
+  --ph-yellow-dim: #C06658;
+  --ph-yellow-normal: #E98A7B;
+  --ph-yellow-bright: #FFAB9D;
+  --ph-green-dim: #C62F30;
+  --ph-green-normal: #F15A53;
+  --ph-green-bright: #FF887E;
+  --ph-cyan-dim: #A4212D;
+  --ph-cyan-normal: #CE4B4F;
+  --ph-cyan-bright: #ED6869;
+  --ph-blue-dim: #950124;
+  --ph-blue-normal: #CD1A3A;
+  --ph-blue-bright: #ED4253;
+  --ph-violet-dim: #820126;
+  --ph-violet-normal: #B9153D;
+  --ph-violet-bright: #D93C56;
+  --ph-magenta-dim: #AC2601;
+  --ph-magenta-normal: #E73702;
+  --ph-magenta-bright: #FF6442;
+}
+
+/* Phosphor Mono Orange */
+:root[data-phosphor="phosphor-mono-orange"] {
+  --ph-base00: #000000;
+  --ph-base01: #0E0B0A;
+  --ph-base02: #2A211D;
+  --ph-base03: #4F3E36;
+  --ph-base04: #7D6155;
+  --ph-base05: #B28978;
+  --ph-base06: #EDB69E;
+  --ph-base07: #FFF9F6;
+  --ph-red-dim: #B95E02;
+  --ph-red-normal: #EE7B04;
+  --ph-red-bright: #FFA15E;
+  --ph-orange-dim: #A34C02;
+  --ph-orange-normal: #D46919;
+  --ph-orange-bright: #F4863E;
+  --ph-yellow-dim: #C06936;
+  --ph-yellow-normal: #E98E5C;
+  --ph-yellow-bright: #FFAE84;
+  --ph-green-dim: #B64A02;
+  --ph-green-normal: #E26D33;
+  --ph-green-bright: #FF8C57;
+  --ph-cyan-dim: #943C18;
+  --ph-cyan-normal: #BC603E;
+  --ph-cyan-bright: #DA7B59;
+  --ph-blue-dim: #882901;
+  --ph-blue-normal: #BC4212;
+  --ph-blue-bright: #DB5F35;
+  --ph-violet-dim: #7A1A01;
+  --ph-violet-normal: #AF2E0B;
+  --ph-violet-bright: #CE4D2E;
+  --ph-magenta-dim: #944701;
+  --ph-magenta-normal: #C76202;
+  --ph-magenta-bright: #E67E33;
+}
+
+/* Phosphor Mono Yellow */
+:root[data-phosphor="phosphor-mono-yellow"] {
+  --ph-base00: #000000;
+  --ph-base01: #0D0C09;
+  --ph-base02: #28221B;
+  --ph-base03: #4B4032;
+  --ph-base04: #76654E;
+  --ph-base05: #A8906D;
+  --ph-base06: #DFBE8F;
+  --ph-base07: #FFF9F1;
+  --ph-red-dim: #AF8503;
+  --ph-red-normal: #DCA805;
+  --ph-red-bright: #F0BC31;
+  --ph-orange-dim: #9C7102;
+  --ph-orange-normal: #C7941E;
+  --ph-orange-bright: #E5B045;
+  --ph-yellow-dim: #BB8D34;
+  --ph-yellow-normal: #E2B25D;
+  --ph-yellow-bright: #ECBC66;
+  --ph-green-dim: #AC7503;
+  --ph-green-normal: #D49A3B;
+  --ph-green-bright: #F2B65A;
+  --ph-cyan-dim: #8E6222;
+  --ph-cyan-normal: #B48548;
+  --ph-cyan-bright: #D1A164;
+  --ph-blue-dim: #835201;
+  --ph-blue-normal: #AF7217;
+  --ph-blue-bright: #CD8E3B;
+  --ph-violet-dim: #6F4101;
+  --ph-violet-normal: #9D5E02;
+  --ph-violet-bright: #BA792E;
+  --ph-magenta-dim: #8F6A02;
+  --ph-magenta-normal: #BB8C03;
+  --ph-magenta-bright: #D8A838;
+}
+
+/* Phosphor Mono Green */
+:root[data-phosphor="phosphor-mono-green"] {
+  --ph-base00: #000000;
+  --ph-base01: #0B0D0A;
+  --ph-base02: #1F251E;
+  --ph-base03: #3A4638;
+  --ph-base04: #5C6E58;
+  --ph-base05: #829D7C;
+  --ph-base06: #ACD0A4;
+  --ph-base07: #F1FFEE;
+  --ph-red-dim: #06CA5F;
+  --ph-red-normal: #09EA6F;
+  --ph-red-bright: #09EA6F;
+  --ph-orange-dim: #05B53B;
+  --ph-orange-normal: #2CDF55;
+  --ph-orange-bright: #3CE95E;
+  --ph-yellow-dim: #68CE6A;
+  --ph-yellow-normal: #7AE07B;
+  --ph-yellow-bright: #7AE07B;
+  --ph-green-dim: #3BBD08;
+  --ph-green-normal: #67E549;
+  --ph-green-bright: #67E549;
+  --ph-cyan-dim: #599C32;
+  --ph-cyan-normal: #7DC25A;
+  --ph-cyan-bright: #95DB72;
+  --ph-blue-dim: #4D8D02;
+  --ph-blue-normal: #68B61F;
+  --ph-blue-bright: #84D346;
+  --ph-violet-dim: #4C7602;
+  --ph-violet-normal: #679E03;
+  --ph-violet-bright: #82BB36;
+  --ph-magenta-dim: #04A944;
+  --ph-magenta-normal: #07D558;
+  --ph-magenta-bright: #38E96B;
+}
+
+/* Phosphor Mono Cyan */
+:root[data-phosphor="phosphor-mono-cyan"] {
+  --ph-base00: #000000;
+  --ph-base01: #0A0D0B;
+  --ph-base02: #1E2520;
+  --ph-base03: #37463B;
+  --ph-base04: #566F5D;
+  --ph-base05: #7A9E84;
+  --ph-base06: #A1D2AE;
+  --ph-base07: #EFFFF3;
+  --ph-red-dim: #05B27C;
+  --ph-red-normal: #08DD9C;
+  --ph-red-bright: #25E6A4;
+  --ph-orange-dim: #049C64;
+  --ph-orange-normal: #27C683;
+  --ph-orange-bright: #51E39E;
+  --ph-yellow-dim: #42BA7C;
+  --ph-yellow-normal: #6BDF9F;
+  --ph-yellow-bright: #6BDF9F;
+  --ph-green-dim: #04A759;
+  --ph-green-normal: #48CE7C;
+  --ph-green-bright: #5FE28F;
+  --ph-cyan-dim: #2D8B47;
+  --ph-cyan-normal: #56B16A;
+  --ph-cyan-bright: #73CE85;
+  --ph-blue-dim: #027E2C;
+  --ph-blue-normal: #1EA742;
+  --ph-blue-bright: #47C45F;
+  --ph-violet-dim: #016A07;
+  --ph-violet-normal: #03930D;
+  --ph-violet-bright: #37B036;
+  --ph-magenta-dim: #039161;
+  --ph-magenta-normal: #05BB7E;
+  --ph-magenta-bright: #43D99A;
+}
+
+/* Phosphor Mono Blue */
+:root[data-phosphor="phosphor-mono-blue"] {
+  --ph-base00: #000000;
+  --ph-base01: #0A0C0E;
+  --ph-base02: #1D242A;
+  --ph-base03: #374450;
+  --ph-base04: #556B7F;
+  --ph-base05: #7998B5;
+  --ph-base06: #9FC9F1;
+  --ph-base07: #F6FBFF;
+  --ph-red-dim: #3779D5;
+  --ph-red-normal: #5B9EFF;
+  --ph-red-bright: #8FBDFF;
+  --ph-orange-dim: #0268C2;
+  --ph-orange-normal: #1D8BF9;
+  --ph-orange-bright: #62AAFF;
+  --ph-yellow-dim: #5387BF;
+  --ph-yellow-normal: #77ACE7;
+  --ph-yellow-bright: #98C9FF;
+  --ph-green-dim: #0274BF;
+  --ph-green-normal: #3799EA;
+  --ph-green-bright: #65B6FF;
+  --ph-cyan-dim: #1C608F;
+  --ph-cyan-normal: #4384B5;
+  --ph-cyan-bright: #5E9FD2;
+  --ph-blue-dim: #01537F;
+  --ph-blue-normal: #1577B0;
+  --ph-blue-bright: #3A92CD;
+  --ph-violet-dim: #014869;
+  --ph-violet-normal: #026592;
+  --ph-violet-bright: #2E80AE;
+  --ph-magenta-dim: #015DB8;
+  --ph-magenta-normal: #037FF7;
+  --ph-magenta-bright: #539EFF;
+}
+
+/* Phosphor Mono Violet */
+:root[data-phosphor="phosphor-mono-violet"] {
+  --ph-base00: #000000;
+  --ph-base01: #0C0B0E;
+  --ph-base02: #24222A;
+  --ph-base03: #433F4F;
+  --ph-base04: #6A637D;
+  --ph-base05: #978DB3;
+  --ph-base06: #C9BBEE;
+  --ph-base07: #FAF9FF;
+  --ph-red-dim: #9B4ED5;
+  --ph-red-normal: #C075FF;
+  --ph-red-bright: #D2A2FF;
+  --ph-orange-dim: #8531CF;
+  --ph-orange-normal: #A95CF9;
+  --ph-orange-bright: #BE88FF;
+  --ph-yellow-dim: #9071BF;
+  --ph-yellow-normal: #B596E7;
+  --ph-yellow-bright: #D0B4FF;
+  --ph-green-dim: #7D53C6;
+  --ph-green-normal: #A178EF;
+  --ph-green-bright: #BA9BFF;
+  --ph-cyan-dim: #633EB1;
+  --ph-cyan-normal: #8464D9;
+  --ph-cyan-bright: #9F80F8;
+  --ph-blue-dim: #5902C1;
+  --ph-blue-normal: #7B35F7;
+  --ph-blue-bright: #9068FE;
+  --ph-violet-dim: #4A02B5;
+  --ph-violet-normal: #6C22F8;
+  --ph-violet-bright: #805EFE;
+  --ph-magenta-dim: #8303CD;
+  --ph-magenta-normal: #AA3AFE;
+  --ph-magenta-bright: #BB76FF;
+}
+
+/* Phosphor Mono Magenta */
+:root[data-phosphor="phosphor-mono-magenta"] {
+  --ph-base00: #000000;
+  --ph-base01: #0E0B0C;
+  --ph-base02: #292024;
+  --ph-base03: #4E3C43;
+  --ph-base04: #7B5F6B;
+  --ph-base05: #B08697;
+  --ph-base06: #EAB1C9;
+  --ph-base07: #FFF8FB;
+  --ph-red-dim: #D32D71;
+  --ph-red-normal: #FF5995;
+  --ph-red-bright: #FF96B4;
+  --ph-orange-dim: #BC0268;
+  --ph-orange-normal: #F4218B;
+  --ph-orange-bright: #FF6DA7;
+  --ph-yellow-dim: #C15E86;
+  --ph-yellow-normal: #E982AB;
+  --ph-yellow-bright: #FFA5C6;
+  --ph-green-dim: #C60A7D;
+  --ph-green-normal: #F146A2;
+  --ph-green-bright: #FF7DBB;
+  --ph-cyan-dim: #9A206C;
+  --ph-cyan-normal: #C3498F;
+  --ph-cyan-bright: #E265AB;
+  --ph-blue-dim: #8B0162;
+  --ph-blue-normal: #C0198A;
+  --ph-blue-bright: #E040A6;
+  --ph-violet-dim: #79015D;
+  --ph-violet-normal: #AD1686;
+  --ph-violet-bright: #CC3CA1;
+  --ph-magenta-dim: #AE025B;
+  --ph-magenta-normal: #E9047C;
+  --ph-magenta-bright: #FF5598;
+}

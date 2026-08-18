@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="817" height="384" viewBox="0 0 817 384" role="img" aria-label="Phosphor palette">
+<rect width="817" height="384" fill="#000000"/>
+<text x="14" y="28" fill="#C8C4B8" font-size="13" font-weight="700" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">PHOSPHOR</text>
+<text x="14" y="40" fill="#6A6862" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">neutral ramp</text>
+<rect x="14" y="48" width="96" height="54" fill="#000000"/>
+<text x="20" y="94" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#000000</text>
+<text x="20" y="62" fill="#FFFAEB" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base00</text>
+<rect x="113" y="48" width="96" height="54" fill="#0C0C0B"/>
+<text x="119" y="94" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#0C0C0B</text>
+<text x="119" y="62" fill="#FFFAEB" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base01</text>
+<rect x="212" y="48" width="96" height="54" fill="#242321"/>
+<text x="218" y="94" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#242321</text>
+<text x="218" y="62" fill="#FFFAEB" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base02</text>
+<rect x="311" y="48" width="96" height="54" fill="#43423E"/>
+<text x="317" y="94" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#43423E</text>
+<text x="317" y="62" fill="#FFFAEB" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base03</text>
+<rect x="410" y="48" width="96" height="54" fill="#6A6862"/>
+<text x="416" y="94" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#6A6862</text>
+<text x="416" y="62" fill="#FFFAEB" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base04</text>
+<rect x="509" y="48" width="96" height="54" fill="#96948B"/>
+<text x="515" y="94" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#96948B</text>
+<text x="515" y="62" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base05</text>
+<rect x="608" y="48" width="96" height="54" fill="#C8C4B8"/>
+<text x="614" y="94" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#C8C4B8</text>
+<text x="614" y="62" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base06</text>
+<rect x="707" y="48" width="96" height="54" fill="#FFFAEB"/>
+<text x="713" y="94" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#FFFAEB</text>
+<text x="713" y="62" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">base07</text>
+<text x="14" y="121" fill="#6A6862" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">dim</text>
+<rect x="14" y="127" width="96" height="54" fill="#A80215"/>
+<text x="20" y="173" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#A80215</text>
+<rect x="113" y="127" width="96" height="54" fill="#9A3D01"/>
+<text x="119" y="173" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#9A3D01</text>
+<rect x="212" y="127" width="96" height="54" fill="#9B6902"/>
+<text x="218" y="173" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#9B6902</text>
+<rect x="311" y="127" width="96" height="54" fill="#669603"/>
+<text x="317" y="173" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#669603</text>
+<rect x="410" y="127" width="96" height="54" fill="#039750"/>
+<text x="416" y="173" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#039750</text>
+<rect x="509" y="127" width="96" height="54" fill="#0263A4"/>
+<text x="515" y="173" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#0263A4</text>
+<rect x="608" y="127" width="96" height="54" fill="#6E02CD"/>
+<text x="614" y="173" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#6E02CD</text>
+<rect x="707" y="127" width="96" height="54" fill="#A20265"/>
+<text x="713" y="173" fill="#FFFAEB" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#A20265</text>
+<text x="14" y="200" fill="#6A6862" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">normal</text>
+<rect x="14" y="206" width="96" height="54" fill="#DF212A"/>
+<text x="20" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#DF212A</text>
+<text x="20" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">red</text>
+<rect x="113" y="206" width="96" height="54" fill="#D05502"/>
+<text x="119" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#D05502</text>
+<text x="119" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">orange</text>
+<rect x="212" y="206" width="96" height="54" fill="#C98A04"/>
+<text x="218" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#C98A04</text>
+<text x="218" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">yellow</text>
+<rect x="311" y="206" width="96" height="54" fill="#83BE05"/>
+<text x="317" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#83BE05</text>
+<text x="317" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">green</text>
+<rect x="410" y="206" width="96" height="54" fill="#06C268"/>
+<text x="416" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#06C268</text>
+<text x="416" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">cyan</text>
+<rect x="509" y="206" width="96" height="54" fill="#1687D9"/>
+<text x="515" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#1687D9</text>
+<text x="515" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">blue</text>
+<rect x="608" y="206" width="96" height="54" fill="#9041F9"/>
+<text x="614" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#9041F9</text>
+<text x="614" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">violet</text>
+<rect x="707" y="206" width="96" height="54" fill="#D5268A"/>
+<text x="713" y="252" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#D5268A</text>
+<text x="713" y="220" fill="#000000" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">magenta</text>
+<text x="14" y="279" fill="#6A6862" font-size="9" font-weight="400" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">bright</text>
+<rect x="14" y="285" width="96" height="54" fill="#FF4C49"/>
+<text x="20" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#FF4C49</text>
+<rect x="113" y="285" width="96" height="54" fill="#F07232"/>
+<text x="119" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#F07232</text>
+<rect x="212" y="285" width="96" height="54" fill="#E7A739"/>
+<text x="218" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#E7A739</text>
+<rect x="311" y="285" width="96" height="54" fill="#9DDB3C"/>
+<text x="317" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#9DDB3C</text>
+<rect x="410" y="285" width="96" height="54" fill="#44E084"/>
+<text x="416" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#44E084</text>
+<rect x="509" y="285" width="96" height="54" fill="#3EA4F8"/>
+<text x="515" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#3EA4F8</text>
+<rect x="608" y="285" width="96" height="54" fill="#A573FF"/>
+<text x="614" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#A573FF</text>
+<rect x="707" y="285" width="96" height="54" fill="#F64AA6"/>
+<text x="713" y="331" fill="#000000" font-size="9" font-weight="600" text-anchor="start" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#F64AA6</text>
+</svg>
