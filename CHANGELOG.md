@@ -9,6 +9,35 @@ Release history for the Phosphor palette
 
 This project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 2.0.1
+
+Every colour value matches 2.0.0. This release carries the documentation, the
+licence and the tooling around them.
+
+### Documentation
+
+The neutral ramp table names the Base16 and Base24 role of each rung, and
+carries its chroma, its hue angle and its contrast against both backgrounds. A
+reader looking up base03 reads that it holds the comments.
+
+The language selector sits above the title in each translation, as one centred
+line of flags.
+
+### Licence
+
+`LICENCE` carries the canonical CC BY-SA 4.0 legal text, so the terms sit in
+the repository. `LICENCE.md` holds what this repository grants on top of it:
+the version grant that extends to any later version, what the licence covers,
+and the source and terms of every asset that came from elsewhere.
+
+### Tooling
+
+`scripts/phosphor_colour.py` runs a self-check when called directly. It
+verifies the conversions against known anchors: white at OKLab lightness 1,
+black at 0, mid grey near 0.5989, a round trip through OKLCH, the WCAG ratios
+of 21:1 and 4.478:1, and a gamut request that gives up chroma while holding
+its lightness and hue.
+
 ## 2.0.0
 
 **Phosphor**, a terminal palette of 32 canonical colours: a warm neutral ramp
