@@ -1,6 +1,6 @@
 <!--
 CHANGELOG.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Release history for the Phosphor palette
 -->

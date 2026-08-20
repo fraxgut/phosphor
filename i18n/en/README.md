@@ -1,6 +1,6 @@
 <!--
 i18n/en/README.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 English documentation for the Phosphor palette
 -->
@@ -235,4 +235,4 @@ inside, the commit conventions and the translation rules.
 ## Licence
 
 [CC-BY-SA-4.0 or later](../../LICENCE.md), by
-[@fraxgut](https://github.com/fraxgut).
+[@guterion](https://github.com/guterion).

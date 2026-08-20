@@ -1,7 +1,7 @@
 # Generated from src/phosphor.yaml. Do not edit manually.
 system: "base16"
 name: "Phosphor Mono Cyan"
-author: "@fraxgut"
+author: "@guterion"
 slug: "phosphor-mono-cyan"
 variant: "dark"
 palette:

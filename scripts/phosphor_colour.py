@@ -1,6 +1,6 @@
 """
 phosphor_colour.py
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Colour-space conversions and metrics for the Phosphor palette work.
 

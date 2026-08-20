@@ -1,6 +1,6 @@
 <!--
 LICENCE.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Licence terms for the palette, the documentation and the original assets
 -->
@@ -33,7 +33,7 @@ of any later version that Creative Commons publishes.
 
 ## What the licence covers
 
-Everything in this repository is original work by @fraxgut and carries
+Everything in this repository is original work by @guterion and carries
 the licence above, with the exceptions named further down.
 
 | Path | Contents |
@@ -80,8 +80,8 @@ belongs to its owner, and this licence grants no right in any of them.
 
 ## Attribution
 
-    Phosphor, by @fraxgut
-    https://github.com/fraxgut/phosphor
+    Phosphor, by @guterion
+    https://github.com/guterion/phosphor
     CC-BY-SA-4.0 or later
 
 ## The legal text

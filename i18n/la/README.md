@@ -1,6 +1,6 @@
 <!--
 i18n/la/README.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Latin documentation for the Phosphor palette
 -->
@@ -237,4 +237,4 @@ consuetudines commissionum et regulas translationis continet.
 ## Licentia
 
 [CC-BY-SA-4.0 aut posterior](../../LICENCE.md), ab
-[@fraxgut](https://github.com/fraxgut).
+[@guterion](https://github.com/guterion).

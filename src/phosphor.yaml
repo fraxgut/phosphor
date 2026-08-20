@@ -1,5 +1,5 @@
 # src/phosphor.yaml
-# @fraxgut
+# @guterion
 # CC-BY-SA-4.0
 # The canonical Phosphor palette and the rules that derive every variant.
 #
@@ -10,7 +10,7 @@
 meta:
   name: Phosphor
   slug: phosphor
-  author: "@fraxgut"
+  author: "@guterion"
   licence: CC-BY-SA-4.0
   version: 2.0.0
   variant: dark

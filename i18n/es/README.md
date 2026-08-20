@@ -1,6 +1,6 @@
 <!--
 i18n/es/README.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Spanish documentation for the Phosphor palette
 -->
@@ -250,4 +250,4 @@ traducción.
 ## Licencia
 
 [CC-BY-SA-4.0 o posterior](../../LICENCE.md), por
-[@fraxgut](https://github.com/fraxgut).
+[@guterion](https://github.com/guterion).

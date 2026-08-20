@@ -1,6 +1,6 @@
 <!--
 README.md
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Project landing page, palette reference and language selector
 -->
@@ -67,7 +67,7 @@ standards mapping and the build. This page carries the colours themselves.
 ```yaml
 system: "base24"
 name: "Phosphor"
-author: "@fraxgut"
+author: "@guterion"
 slug: "phosphor"
 variant: "dark"
 palette:
@@ -218,4 +218,4 @@ inside, the commit conventions and the translation rules.
 
 ## Licence
 
-[CC-BY-SA-4.0 or later](LICENCE.md), by [@fraxgut](https://github.com/fraxgut).
+[CC-BY-SA-4.0 or later](LICENCE.md), by [@guterion](https://github.com/guterion).

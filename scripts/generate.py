@@ -5,7 +5,7 @@
 # ///
 """
 generate.py
-@fraxgut
+@guterion
 CC-BY-SA-4.0
 Generate every Phosphor scheme and export from src/phosphor.yaml.
 

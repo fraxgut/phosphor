@@ -1,7 +1,7 @@
 # Generated from src/phosphor.yaml. Do not edit manually.
 system: "base24"
 name: "Phosphor Tint Green"
-author: "@fraxgut"
+author: "@guterion"
 slug: "phosphor-tint-green"
 variant: "dark"
 palette:
